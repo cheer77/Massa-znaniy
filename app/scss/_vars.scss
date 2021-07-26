@@ -1,0 +1,21 @@
+$header: #436372;
+$hover: #a3bbc8;
+$footer:#7b7b7b;
+$title:#191919;
+$border:#f6f6f6;
+
+%dmsans-400 {
+    font-family: 'DMSans-Regular';
+    font-weight: 400;
+}
+
+
+
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+

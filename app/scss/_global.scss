@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1040px;
+    padding: 0 200px;
+    margin: 0 auto;
+}
+
+.title {
+}
