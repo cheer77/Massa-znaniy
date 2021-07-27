@@ -24,8 +24,6 @@
         margin-right: 24px;
     }
 
-    &__email {
-    }
     &__mob-menu {
         display: none;
         z-index: 50;
@@ -62,7 +60,6 @@
 
     &__item {
         display: inline-block;
-        // margin-top: 2px;
         padding: 12px 30px;
         &:hover {
             background-color: #4eb1f6;
@@ -109,11 +106,6 @@
         cursor: pointer;
     }
 
-    // &__link--drop:focus + &__items--drop,
-    // &__link--drop:active + &__items--drop {
-    //     transition: all 0.3s;
-    //     display: block;
-    // }
     &__item--drop {
         display: flex;
         align-items: center;
