@@ -1,16 +1,29 @@
 $header: #436372;
 $hover: #a3bbc8;
-$footer:#7b7b7b;
-$title:#191919;
-$border:#f6f6f6;
+$footer: #7b7b7b;
+$title: #191919;
+$border: #f6f6f6;
 
-%dmsans-400 {
-    font-family: 'DMSans-Regular';
+%days-400 {
+    font-family: "DaysOne-Regular";
     font-weight: 400;
 }
-
-
-
+%robo-400 {
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+}
+%robo-500 {
+    font-family: "Roboto-Medium";
+    font-weight: 500;
+}
+%robo-700 {
+    font-family: "Roboto-Bold";
+    font-weight: 700;
+}
+%robo-900 {
+    font-family: "Roboto-Black";
+    font-weight: 900;
+}
 
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
@@ -18,4 +31,3 @@ $border:#f6f6f6;
 @function min($numbers...) {
     @return m#{i}n(#{$numbers});
 }
-
