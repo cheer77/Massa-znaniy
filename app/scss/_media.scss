@@ -1,0 +1,126 @@
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 1025px) {
+    .header-menu {
+        background-color: #44484c;
+        min-height: 48px;
+        box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.25);
+
+        &__items {
+            display: block;
+            text-align: center;
+        }
+
+        &__item {
+            display: inline-block;
+            // margin-top: 2px;
+            padding: 12px 30px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .header-top {
+        &__email {
+            display: none;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .lock {
+        overflow: hidden;
+    }
+
+    .container {
+        max-width: none;
+        padding: 0 15px;
+    }
+
+    .header-top {
+        // Кнопка Бургер меню ---------------------------->
+        &__mob-menu {
+            display: block;
+            position: absolute;
+            right: 0px;
+            top: 50px;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 40px;
+            padding: 5px;
+            cursor: pointer;
+            & span {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #ffffff;
+                margin-bottom: 5px;
+                transition: all 0.5s;
+            }
+        }
+        &__mob-menu-active {
+            padding-top: 12px;
+            & span {
+                margin-bottom: -2px;
+                transition: all 0.9s;
+                &:nth-child(1) {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(3) {
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .header-menu {
+        position: fixed;
+        top: -1500px;
+        right: 0;
+        min-height: 100%;
+        width: 100%;
+        z-index: 10;
+        transition: all 0.7s;
+        overflow: auto;
+
+        &__active {
+            // top: 161px;
+            top: 0;
+        }
+
+        &__item {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding: 12px 30px;
+            max-width: 320px;
+            overflow: auto;
+            &:first-child {
+                margin-top: 80px;
+            }
+        }
+
+        &__link {
+            padding: 10px 35px;
+        }
+
+        &__items--drop {
+            position: relative;
+            top: 10px;
+            right: 22px;
+            background-color: #696d70;
+            text-align: center;
+            width: 305px;
+            overflow: auto;
+        }
+    }
+}

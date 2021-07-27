@@ -26,6 +26,26 @@
 
     &__email {
     }
+    &__mob-menu {
+        display: none;
+        z-index: 50;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 40px;
+        padding: 5px;
+        cursor: pointer;
+        & span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #ffffff;
+            margin-bottom: 5px;
+            transition: all 0.5s;
+        }
+    }
 }
 
 .header-menu {
@@ -36,15 +56,26 @@
     &__items {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
     }
 
     &__item {
+        display: inline-block;
         // margin-top: 2px;
         padding: 12px 30px;
         &:hover {
             background-color: #4eb1f6;
             box-shadow: inset 0px 0px 15px #44484c;
+        }
+    }
+
+    &__item--active {
+        background-color: #4eb1f6;
+        box-shadow: inset 0px 0px 15px #44484c;
+        &:hover {
+            background-color: #0095ff;
+            box-shadow: inset 0px 0px 15px #363738;
         }
     }
 
@@ -62,20 +93,27 @@
     }
 
     &__items--drop {
+        display: none;
+    }
+    &__items--drop--active {
+        display: block;
         position: absolute;
         top: 48px;
         right: -30px;
         background-color: #696d70;
         text-align: center;
         width: 194px;
-        display: none;
     }
 
-    &__link--drop:focus ~ &__items--drop,
-    &__link--drop:active ~ &__items--drop {
-        transition: all 0.3s;
-        display: block;
+    &__link--drop {
+        cursor: pointer;
     }
+
+    // &__link--drop:focus + &__items--drop,
+    // &__link--drop:active + &__items--drop {
+    //     transition: all 0.3s;
+    //     display: block;
+    // }
     &__item--drop {
         display: flex;
         align-items: center;
