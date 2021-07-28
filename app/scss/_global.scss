@@ -25,4 +25,24 @@ main {
 }
 
 .title {
+    padding: 20px;
+    color: #0633ce;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    @extend %days-400;
+    font-size: 48px;
+    line-height: 16px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.frame {
+    background-color: #fff;
+    min-height: 644px;
+    max-width: 1040px;
+    padding: 50px 40px;
+    border: 6px solid #4fc3f7;
+    box-shadow: 0 0 70px rgba(25, 144, 255, 0.7), 0 0 35px rgba(0, 99, 145, 0.63);
+    border-radius: 130px;
 }

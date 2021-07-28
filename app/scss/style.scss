@@ -24,6 +24,11 @@
         margin-right: 24px;
     }
 
+    &__email-img {
+        width: 320px;
+        height: 100px;
+    }
+
     &__mob-menu {
         display: none;
         z-index: 50;
@@ -118,6 +123,15 @@
             box-shadow: inset 0px 0px 15px #44484c;
         }
     }
+
+    &__item--drop--active {
+        background-color: #4eb1f6;
+        box-shadow: inset 0px 0px 15px #44484c;
+        &:hover {
+            background-color: #0095ff;
+            box-shadow: inset 0px 0px 15px #363738;
+        }
+    }
     &__link--drop {
         padding: 10px 9px;
         color: #fff;
@@ -126,6 +140,213 @@
         @extend %days-400;
         font-size: 16px;
         line-height: 16px;
+    }
+}
+
+.about {
+    margin-bottom: 100px;
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 450px;
+        height: 450px;
+        animation: pulsing 12s infinite;
+    }
+
+    @keyframes pulsing {
+        0% {
+            transform: scale(0.6, 0.6);
+        }
+        50% {
+            transform: scale(1.2, 1.2);
+        }
+        100% {
+            transform: scale(0.6, 0.6);
+        }
+    }
+
+    &__title {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 68px;
+        max-width: 360px;
+    }
+    &__text,
+    &__descr {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+        @extend %robo-700;
+    }
+    &__text {
+        max-width: 825px;
+        margin-bottom: 61px;
+    }
+    &__items {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        padding-left: 28px;
+        margin-top: 30px;
+        font-size: 20px;
+        position: relative;
+        &:first-child {
+            margin-top: 0;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/check.svg");
+            width: 21px;
+            height: 15px;
+            left: 0;
+            bottom: 5px;
+        }
+    }
+    &__descr {
+        margin-top: 62px;
+        max-width: 485px;
+    }
+}
+
+.zno {
+    margin: 90px 0;
+
+    &__title {
+        display: block;
+        margin: 0 auto;
+        max-width: 750px;
+        margin-bottom: 68px;
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+    &__btn {
+        display: block;
+        width: 307px;
+        background-color: #fff;
+        border: 2px solid #2e2e2e;
+        border-radius: 4px;
+        text-align: center;
+        margin-bottom: 19px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        @extend %robo-900;
+        color: #2e2e2e;
+        cursor: pointer;
+        transition: all 0.9s;
+        &:hover {
+            background: #0633ce;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+    }
+
+    &__courses {
+        // display: none;
+    }
+    &__courses-showing {
+        display: none;
+    }
+
+    &__courses-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__courses-title {
+        text-align: center;
+        font-size: 36px;
+        line-height: 46px;
+        color: #2e2e2e;
+        @extend %days-400;
+        text-transform: uppercase;
+    }
+
+    &__cours-type {
+        margin-bottom: 9px;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+        color: #0633ce;
+        @extend %days-400;
+    }
+    &__cours-lenth {
+        margin-bottom: 32px;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2e2e2e;
+        text-align: center;
+        @extend %robo-700;
+    }
+    &__cours-items {
+        max-width: 343px;
+    }
+    &__cours-item {
+        margin-bottom: 25px;
+        padding-left: 28px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/check.svg");
+            width: 21px;
+            height: 15px;
+            left: 0;
+            bottom: 5px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__price-top {
+        margin-top: 35px;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2e2e2e;
+        @extend %robo-700;
+    }
+    &__price-bottom {
+        font-size: 24px;
+        line-height: 28px;
+        color: #2e2e2e;
+        @extend %robo-700;
+        margin-left: 20px;
+        margin-bottom: 32px;
+    }
+    &__order {
+        display: block;
+        padding: 14px 24px;
+        max-width: 187px;
+        color: #fff;
+        background: #4eb1f6;
+        border: 2px solid #4eb1f6;
+        box-sizing: border-box;
+        border-radius: 100px;
+        font-size: 18px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto;
+        @extend %days-400;
+        transition: all 0.4s;
+        &:hover {
+            background: #0281db;
+            box-shadow: 0px 7px 8px 3px rgba(34, 60, 80, 0.2);
+        }
+    }
+
+    &__courses-center {
+        margin-top: 130px;
     }
 }
 

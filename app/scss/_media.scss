@@ -43,6 +43,19 @@
         padding: 0 15px;
     }
 
+    .frame {
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 40px 30px;
+        border-radius: 70px;
+    }
+
+    .title {
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size: 38px;
+    }
+
     .header {
         background-color: #2e2e2e;
         position: fixed;
@@ -55,7 +68,8 @@
         min-height: 141px;
 
         &__logo-img {
-            max-width: 190px;
+            width: 190px;
+            height: 100px;
         }
         &__links {
             max-width: 230px;
@@ -140,6 +154,18 @@
         }
     }
 
+    .about {
+        &__img {
+            margin-top: 80px;
+            width: 450px;
+            height: 450px;
+        }
+        &__title {
+            margin-bottom: 48px;
+            max-width: 340px;
+        }
+    }
+
     .footer {
         // margin: 20px 0;
         min-height: 130px;
@@ -163,15 +189,66 @@
 }
 
 @media (max-width: 575px) {
+    .container {
+        padding: 0 5px;
+    }
+    .title {
+        text-transform: uppercase;
+        font-size: 31px;
+    }
+
+    .frame {
+        padding: 20px 10px;
+        border: 5px solid #4fc3f7;
+        border-radius: 25px;
+    }
+
     .header-top {
         min-height: 111px;
 
         &__logo-img {
-            max-width: 140px;
+            width: 140px;
+            height: 75px;
         }
         &__links {
             max-width: 200px;
             margin-left: 18px;
+        }
+    }
+
+    .about {
+        &__img {
+            padding: 10px;
+            margin-top: 80px;
+            width: 250px;
+            height: 250px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+            max-width: 250px;
+        }
+        &__text,
+        &__descr {
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__text {
+            margin-bottom: 31px;
+        }
+        &__item {
+            padding-left: 28px;
+            margin-top: 20px;
+            font-size: 16px;
+            &::before {
+                left: 0;
+                bottom: 3px;
+            }
+        }
+
+        &__descr {
+            margin-top: 32px;
         }
     }
 }
