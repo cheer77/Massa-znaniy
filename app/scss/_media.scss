@@ -53,7 +53,7 @@
     .title {
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .header {
@@ -166,6 +166,67 @@
         }
     }
 
+    .zno {
+        padding-top: 100px;
+        &__title {
+            max-width: 550px;
+            margin-bottom: 68px;
+            line-height: 30px;
+        }
+
+        &__btn {
+            display: block;
+            margin-bottom: 22px;
+        }
+        &__courses-inner {
+            flex-direction: column;
+        }
+        &__courses-title {
+            font-size: 28px;
+            line-height: 46px;
+            margin-bottom: 20px;
+        }
+
+        &__courses-left,
+        &__courses-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__courses-center {
+            margin: 40px auto;
+        }
+
+        &__cours-type {
+            margin-bottom: 0px;
+            font-size: 24px;
+        }
+        &__cours-lenth {
+            margin-bottom: 32px;
+            font-size: 21px;
+        }
+        &__cours-items {
+            max-width: 100%;
+        }
+        &__cours-item {
+            margin-bottom: 21px;
+            padding-left: 28px;
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url("../images/icons/check.svg");
+                width: 21px;
+                height: 15px;
+                left: 0;
+                bottom: 5px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
     .footer {
         // margin: 20px 0;
         min-height: 130px;
@@ -249,6 +310,25 @@
 
         &__descr {
             margin-top: 32px;
+        }
+    }
+
+    .zno {
+        &__btns {
+            // display: block;
+        }
+        &__btn {
+            padding: 10px 30px;
+            margin-bottom: 12px;
+        }
+        &__price-top {
+            margin-top: 30px;
+            font-size: 21px;
+        }
+
+        &__price-bottom {
+            font-size: 21px;
+            margin-left: 10px;
         }
     }
 }
