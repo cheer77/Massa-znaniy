@@ -227,6 +227,17 @@
         }
     }
 
+    .school {
+        padding-top: 180px;
+
+        &__title {
+            line-height: 40px;
+            padding: 5px 0px;
+            font-size: 31px;
+            margin-bottom: 15px;
+        }
+    }
+
     .footer {
         // margin: 20px 0;
         min-height: 130px;
@@ -255,7 +266,16 @@
     }
     .title {
         text-transform: uppercase;
-        font-size: 31px;
+        font-size: 25px;
+    }
+
+    .header-menu {
+        &__items--drop {
+            position: relative;
+            top: 10px;
+            right: 23px;
+            width: 305px;
+        }
     }
 
     .frame {
@@ -317,6 +337,9 @@
         &__btns {
             // display: block;
         }
+        &__dpa-btns .zno__dpa {
+            margin-right: 0px;
+        }
         &__btn {
             padding: 10px 30px;
             margin-bottom: 12px;
@@ -329,6 +352,16 @@
         &__price-bottom {
             font-size: 21px;
             margin-left: 10px;
+        }
+    }
+
+    .school {
+        padding-top: 180px;
+
+        &__title {
+            line-height: 32px;
+            padding: 5px 0px;
+            margin-bottom: 15px;
         }
     }
 }
