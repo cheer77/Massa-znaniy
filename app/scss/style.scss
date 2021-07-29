@@ -224,7 +224,7 @@
     }
     &__btns {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         margin-bottom: 32px;
     }
@@ -249,11 +249,22 @@
         }
     }
 
-    &__courses {
-        // display: none;
+    &__btn--active {
+        background: #0633ce;
+        color: #fff;
+        border: 2px solid #fff;
+        &:hover {
+            background: #011d83;
+            color: #fff;
+            border: 2px solid #fff;
+        }
     }
-    &__courses-showing {
+
+    &__courses-wrapper {
         display: none;
+    }
+    &__courses-wrapper--active {
+        display: block;
     }
 
     &__courses-inner {

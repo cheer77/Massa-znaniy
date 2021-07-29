@@ -30,15 +30,27 @@ $(function () {
 
 
 
-    $(function () {
-        $('.jqueryOptions').hide();
+    // $(function () {
+    //     $('.jqueryOptions').hide();
 
-        $('#choose').change(function () {
-            $('.jqueryOptions').slideUp();
-            $('.jqueryOptions').removeClass('current-opt');
-            $("." + $(this).val()).slideDown();
-            $("." + $(this).val()).addClass('current-opt');
-        });
+    //     $('#choose').change(function () {
+    //         $('.jqueryOptions').slideUp();
+    //         $('.jqueryOptions').removeClass('current-opt');
+    //         $("." + $(this).val()).slideDown();
+    //         $("." + $(this).val()).addClass('current-opt');
+    //     });
+    // });
+
+
+    $('.zno__btn').on('click', function (e) {
+
+        e.preventDefault();
+        $('.zno__btn').removeClass('zno__btn--active');
+        $(this).addClass('zno__btn--active');
+
+        $('.zno__courses-wrapper').removeClass('zno__courses-wrapper--active');
+        $($(this).attr('href')).addClass('zno__courses-wrapper--active');
+
     });
 
 
