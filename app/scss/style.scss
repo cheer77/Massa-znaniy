@@ -498,6 +498,94 @@
     }
 }
 
+.review {
+    padding-top: 100px;
+
+    &__title {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        margin-bottom: 90px;
+    }
+
+    &__items {
+        margin-bottom: 120px;
+    }
+
+    &__item {
+        margin: 0 10px;
+        max-width: 430px;
+        min-height: 379px;
+        background: #ffffff;
+        border-radius: 45px;
+        padding: 22px 20px;
+        transition: all 0.4s;
+        &:hover {
+            box-shadow: 0px 0px 15px 5px #0228f7;
+        }
+    }
+
+    &__item-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 9px;
+    }
+    &__item-name,
+    &__item-time {
+        font-size: 24px;
+        line-height: 24px;
+        color: #0633ce;
+        @extend %days-400;
+    }
+    &__item-time {
+        margin-right: 25px;
+    }
+    &__item-name {
+        margin-right: 40px;
+    }
+}
+
+.slick-slide {
+    max-width: 907px;
+    padding: 30px 0;
+    display: flex !important;
+    justify-content: center;
+}
+
+.slick-arrow.slick-prev {
+    font-size: 0;
+    position: absolute;
+    background: url("../images/icons/arrow-left.svg");
+    width: 40px;
+    height: 74px;
+    left: -17px;
+    top: 200px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 20;
+    &:hover {
+        background-image: url("../images/icons/arrow-right-hover.svg");
+    }
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+    font-size: 0;
+    position: absolute;
+    background: url("../images/icons/arrow-right.svg");
+    width: 40px;
+    height: 74px;
+    right: -17px;
+    top: 200px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background-image: url("../images/icons/arrow-left-hover.svg");
+    }
+}
+
 .footer {
     background-color: #2e2e2e;
     min-height: 100px;

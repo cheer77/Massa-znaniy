@@ -246,6 +246,18 @@
         }
     }
 
+    .review {
+        padding-top: 170px;
+    }
+
+    .slick-arrow.slick-prev {
+        left: 0px;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+        right: 0px;
+    }
+
     .footer {
         // margin: 20px 0;
         min-height: 130px;
@@ -306,6 +318,9 @@
     }
 
     .about {
+        &__inner {
+            min-height: 500px;
+        }
         &__img {
             padding: 10px;
             margin-top: 80px;
@@ -398,6 +413,52 @@
             line-height: 32px;
             padding: 5px 0px;
             margin-bottom: 15px;
+        }
+    }
+
+    .review {
+        &__title {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        &__items {
+            margin-bottom: 50px;
+        }
+
+        &__item {
+            max-width: 390px;
+            border-radius: 25px;
+            padding: 12px 20px;
+        }
+
+        &__item-name,
+        &__item-time {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__item-time {
+            margin-right: 5px;
+        }
+        &__item-name {
+            margin-right: 10px;
+        }
+    }
+
+    .slick-arrow.slick-prev {
+        display: none;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .review {
+        &__item {
+            max-width: 295px;
+            border-radius: 25px;
+            padding: 12px 20px;
         }
     }
 }

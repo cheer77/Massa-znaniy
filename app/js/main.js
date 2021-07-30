@@ -30,17 +30,6 @@ $(function () {
 
 
 
-    // $(function () {
-    //     $('.jqueryOptions').hide();
-
-    //     $('#choose').change(function () {
-    //         $('.jqueryOptions').slideUp();
-    //         $('.jqueryOptions').removeClass('current-opt');
-    //         $("." + $(this).val()).slideDown();
-    //         $("." + $(this).val()).addClass('current-opt');
-    //     });
-    // });
-
 
     $('.zno__btn').on('click', function (e) {
 
@@ -51,6 +40,26 @@ $(function () {
         $('.zno__courses-wrapper').removeClass('zno__courses-wrapper--active');
         $($(this).attr('href')).addClass('zno__courses-wrapper--active');
 
+    });
+
+
+    $('.review__items').slick({
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 980,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '1px',
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                }
+            }
+        ]
     });
 
 
