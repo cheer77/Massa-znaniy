@@ -705,6 +705,136 @@
     }
 }
 
+.pay {
+    padding-top: 100px;
+    &__title {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        margin-bottom: 79px;
+    }
+
+    &__inner {
+        margin-bottom: 100px;
+    }
+
+    &__inner-title {
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2e2e2e;
+        margin-bottom: 25px;
+        @extend %robo-700;
+    }
+
+    &__descr-text {
+        line-height: 28px;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__ways {
+        margin-bottom: 48px;
+    }
+
+    &__ways-item {
+        padding-left: 60px;
+        margin-bottom: 25px;
+        position: relative;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__ways-item--mono {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            background-image: url("../images/icons/mono.svg");
+            left: 0;
+            top: -8px;
+        }
+    }
+    &__ways-item--pri24 {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-image: url("../images/icons/privat-24.svg");
+            left: 0;
+            top: -8px;
+        }
+    }
+    &__ways-item--privat {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 39px;
+            height: 40px;
+            background-image: url("../images/icons/privat.svg");
+            left: 0;
+            top: -8px;
+        }
+    }
+    &__ways-item--bank {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-image: url("../images/icons/bank.svg");
+            left: 0;
+            top: -8px;
+        }
+    }
+    &__ways-item--card {
+        &::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-image: url("../images/icons/card.svg");
+            left: 0;
+            top: -8px;
+        }
+    }
+
+    &__min {
+        display: block;
+        text-align: center;
+        margin-bottom: 48px;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0633ce;
+        @extend %robo-700;
+    }
+    &__documents {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2e2e2e;
+        @extend %robo-700;
+    }
+    &__ofert {
+        margin-right: 145px;
+    }
+    &__politcs,
+    &__ofert {
+        border-bottom: 2px solid transparent;
+        padding-bottom: 3px;
+        transition: all 0.3s;
+        &:hover {
+            border-bottom: 2px solid #2e2e2e;
+        }
+    }
+}
+
 .footer {
     background-color: #2e2e2e;
     min-height: 100px;

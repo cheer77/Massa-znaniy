@@ -45,6 +45,14 @@
             padding: 14px 0;
         }
     }
+
+    .pay {
+        padding-top: 200px;
+        &__ofert {
+            margin-right: 40px;
+            margin-bottom: 20px;
+        }
+    }
 }
 @media (max-width: 768px) {
     .lock {
@@ -272,6 +280,22 @@
     }
     .faq {
         padding-top: 150px;
+    }
+
+    .pay {
+        padding-top: 200px;
+        &__inner {
+            margin-bottom: 100px;
+        }
+        &__ways-item--mono,
+        &__ways-item--pri24,
+        &__ways-item--privat,
+        &__ways-item--bank,
+        &__ways-item--card {
+            &::before {
+                top: 0px;
+            }
+        }
     }
 
     .footer {
@@ -524,6 +548,20 @@
             font-size: 25px;
             line-height: 30px;
             margin-bottom: 30px;
+        }
+    }
+
+    .pay {
+        &__documents {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        &__ofert {
+            margin-right: 0px;
         }
     }
 }
