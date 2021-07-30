@@ -2,6 +2,14 @@
     .container {
         padding: 0 50px;
     }
+
+    .contact {
+        &__social {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
 }
 @media (max-width: 1025px) {
     .header-menu {
@@ -51,6 +59,33 @@
         &__ofert {
             margin-right: 40px;
             margin-bottom: 20px;
+        }
+    }
+
+    .contact {
+        &__phones {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 31px;
+            padding-left: 75px;
+        }
+        &__social-teleg,
+        &__social-face {
+            margin-right: 0px;
+        }
+        &__email {
+            display: block;
+            margin: 0 auto;
+            max-width: 400px;
+            font-size: 33px;
+            line-height: 46px;
+            padding-left: 5px;
+            position: relative;
+            &::before {
+                left: -80px;
+            }
         }
     }
 }
@@ -298,6 +333,22 @@
         }
     }
 
+    .contact {
+        padding-top: 170px;
+        margin-bottom: 80px;
+        &__email {
+            text-align: center;
+            max-width: 400px;
+            font-size: 23px;
+            line-height: 46px;
+            padding-left: 5px;
+            position: relative;
+            &::before {
+                left: -30px;
+            }
+        }
+    }
+
     .footer {
         // margin: 20px 0;
         min-height: 130px;
@@ -514,6 +565,50 @@
             font-size: 30px;
             line-height: 33px;
             margin-bottom: 35px;
+        }
+    }
+
+    .contact {
+        &__inner-title {
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 28px;
+            line-height: 38px;
+        }
+        &__phones {
+            font-size: 25px;
+            line-height: 36px;
+            padding-left: 0px;
+        }
+        &__phones-links {
+            margin-bottom: 45px;
+            position: relative;
+            &:last-child {
+                margin-bottom: 62px;
+            }
+            &::before {
+                display: none;
+            }
+        }
+
+        &__social-teleg,
+        &__social-face,
+        &__social-viber,
+        &__social-insta {
+            font-size: 22px;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+        &__email {
+            text-align: center;
+            max-width: 400px;
+            font-size: 20px;
+            line-height: 46px;
+            padding-left: 5px;
+            position: relative;
+            &::before {
+                display: none;
+            }
         }
     }
 }

@@ -835,6 +835,156 @@
     }
 }
 
+.contact {
+    padding-top: 100px;
+
+    &__title {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        margin-bottom: 83px;
+    }
+
+    &__inner {
+        margin-bottom: 100px;
+    }
+
+    &__inner-title {
+        text-align: center;
+        margin-bottom: 42px;
+        font-size: 48px;
+        line-height: 48px;
+        color: #0633ce;
+        @extend %days-400;
+    }
+
+    &__phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 36px;
+        line-height: 46px;
+        color: #2e2e2e;
+        @extend %days-400;
+        padding-left: 75px;
+    }
+    &__phones-links {
+        margin-bottom: 45px;
+        position: relative;
+        &:last-child {
+            margin-bottom: 62px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/phone-voice.svg");
+            width: 65px;
+            height: 65px;
+            left: -75px;
+            top: -12px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    &__social-teleg,
+    &__social-face {
+        display: inline-block;
+        margin-right: 50px;
+    }
+    &__social-insta {
+        position: relative;
+        padding-left: 75px;
+        font-size: 36px;
+        @extend %days-400;
+        margin-bottom: 40px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/cont_insta.svg");
+            width: 68px;
+            height: 68px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__social-viber {
+        position: relative;
+        padding-left: 75px;
+        font-size: 36px;
+        @extend %days-400;
+        margin-bottom: 40px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/cont_viber.svg");
+            width: 68px;
+            height: 68px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__social-face {
+        position: relative;
+        padding-left: 75px;
+        font-size: 36px;
+        @extend %days-400;
+        margin-bottom: 40px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/cont_facebook.svg");
+            width: 68px;
+            height: 68px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__social-teleg {
+        position: relative;
+        padding-left: 75px;
+        font-size: 36px;
+        @extend %days-400;
+        margin-bottom: 40px;
+        // padding-right: 30px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/contact_telegram.svg");
+            width: 68px;
+            height: 68px;
+            left: -10px;
+            top: 0;
+        }
+    }
+
+    &__email {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        font-size: 36px;
+        line-height: 46px;
+        color: #2e2e2e;
+        @extend %days-400;
+        padding-left: 25px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/cont_email.svg");
+            background-repeat: no-repeat;
+            width: 68px;
+            height: 65px;
+            left: -80px;
+        }
+    }
+}
+
 .footer {
     background-color: #2e2e2e;
     min-height: 100px;
